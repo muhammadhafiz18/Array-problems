@@ -237,3 +237,104 @@
 
 //     }
 // }
+
+
+// using System;
+
+// class Program P1
+// {
+//     static void Main()
+//     {
+//         int[] num = { 10, 25, 30, 15, 40, 50 };
+
+
+//         int max = num[0];
+//         int max2 = num[0];
+
+//         for (int i = 1; i < num.Length; i++)
+//         {
+//             if (num[i] > max)
+//             {
+//                 max2 = max;
+//                 max = num[i];
+//             }
+//             else if (num[i] > max2 && num[i] != max)
+//             {
+//                 max2 = num[i];
+//             }
+//         }
+
+//         Console.WriteLine($"Eng katta son: {max}");
+//         Console.WriteLine($"Ikkinchi eng katta son: {max2}");
+//     }
+// }
+
+// class Program P2
+// {
+//     static void Main()
+//     {
+//         int[] number = { 4, 5, 6, 4, 4 ,7, 5, 6, 6, 6};
+
+//         int num = number[0];
+//         int count = 1;
+
+//         for (int i = 0; i < number.Length; i++)
+//         {
+//             for (int j = 1; j < number.Length; j++)
+//             {
+//                 if (number[i] == number[j])
+//                 {
+//                     count++;
+//                 }
+//             }
+//         }
+
+//         Console.WriteLine($"Eng ko‘p uchragan sonlar: {num} ({count} marta)");
+//     }
+// }
+
+
+// class Program P3
+// {
+//     static void Main()
+//     {
+//         int[] num = {1, 2, 3, 4, 5};
+//         int last = num[num.Length - 1]; 
+
+//         for(int i = num.Length - 1; i > 0; i--) 
+//         {
+//             num[i] = num[i - 1]; 
+//         }
+
+//         num[0] = last;
+
+//         Console.WriteLine(string.Join(", " , num));
+
+//     }
+// }
+
+// class Program   P9
+// {
+//     static void Main()
+//     {
+//         int[] son1 = { 10, 15, 20, 25, 30, 35 };
+//         List<int> juft = new List<int>();
+//         List<int> toq = new List<int>();
+
+//         foreach (int son in son1)
+//         {
+//             if (son % 2 == 0)
+//             {
+//                 juft.Add(son);
+//             }
+//             else
+//             {
+//                 toq.Add(son);
+//             }
+//         }
+
+//         Console.WriteLine("Juft sonlar: " + string.Join(", ", juft));
+//         Console.WriteLine("Toq sonlar: " + string.Join(", ", toq));
+
+//     }
+// }
