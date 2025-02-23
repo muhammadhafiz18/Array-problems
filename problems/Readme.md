@@ -74,9 +74,9 @@
 2. Chiqish (Output):
 
    - 9 (9)
-   - 12 (1+2=3)  
+   - 12 (1+2=3)
    - 41 (4+1=5)
-   - 25 (2+5=7)  
+   - 25 (2+5=7)
    - 38 (3+8=11)
 
 ### 8. Yo‘qolgan sonni topish
@@ -97,7 +97,7 @@
 
 2. Chiqish (Output):
 
-   - Juft sonlar: 10, 20, 30  
+   - Juft sonlar: 10, 20, 30
    - Toq sonlar: 15, 25, 35
 
 ### 10. So‘zlarni bosh harfiga qarab guruhlash
@@ -109,5 +109,5 @@
 2. Chiqish (Output):
 
    - A: apple, apricot
-   - B: banana, blueberry  
+   - B: banana, blueberry
    - C: cherry
