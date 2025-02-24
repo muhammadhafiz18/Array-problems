@@ -87,16 +87,16 @@
 
 
         //<--6-->
-        List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6, 7, 8};
-        int N = 2;
-        int M = 6;
+        // List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6, 7, 8};
+        // int N = 2;
+        // int M = 6;
         
-        var reversedNumbers = numbers.GetRange(N, M - N);
-        numbers.RemoveRange(N, M - N);
-        reversedNumbers.Reverse();
-        numbers.InsertRange(N, reversedNumbers);
+        // var reversedNumbers = numbers.GetRange(N, M - N);
+        // numbers.RemoveRange(N, M - N);
+        // reversedNumbers.Reverse();
+        // numbers.InsertRange(N, reversedNumbers);
 
-        Console.WriteLine(string.Join(", ", numbers));
+        // Console.WriteLine(string.Join(", ", numbers));
 
         //<--7-->
         // List<int> arr = [12, 25, 9, 38, 41];
@@ -115,6 +115,21 @@
         // }
 
 
+        //<--8-->
+        // List<int> numbers = new List<int> { 1, 2, 3, 5, 6 };
+
+        // int n = numbers.Count + 1;
+
+        // int temp = n * (n + 1) / 2;
+        // int sum = 0;
+        
+        // foreach (int num in numbers)
+        // {
+        //     sum += num;
+        // }
+        
+        // int result = temp - sum;
+        // Console.WriteLine("Yoqolgan son: " + result);
 
         //<--9-->
 
