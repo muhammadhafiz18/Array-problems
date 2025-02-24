@@ -7,7 +7,7 @@
 // Chiqish (Output):
 
 // Eng katta son: 50  
-// Ikkinchi eng katta son: 40
+//  eIkkinching katta son: 40
 
 
 // ---
@@ -136,3 +136,123 @@
 // A: apple, apricot  
 // B: banana, blueberry  
 // C: cherry
+
+using System.Security.Principal;
+
+class Program 
+{
+    public static void Main()
+    {
+        //Problem1();
+        //Problem2();
+        //Problem3();
+        //Problem5();
+
+    }
+
+    public static void Problem1()
+    {
+        int[] array = [10,50,40,15,25];
+        int sum = 0; 
+
+        for(int i = 0; i < array.Length; i++)
+        {
+            for(int a = 0; a < array.Length; a++)
+            {
+                if(array[i] < array[a])
+                {
+                    sum = array[i];
+                    array[i] = array[a];
+                    array[a] = sum;
+                }
+            }   
+        }
+
+        int kattaSon = 0;
+        int kichikSon = 0;
+
+        for(int i = 0; i < array.Length; i++)
+        {
+            if(array[i] > 0)
+            {
+                kattaSon = array[i];
+            }
+        }
+
+        for(int i = 0; i < array.Length; i++)
+        {
+            if(array[i] > kichikSon && array[i] < kattaSon)
+            {
+                kichikSon = array[i];
+            }
+        }
+
+        Console.WriteLine("Eng katta son:" + kattaSon);
+        Console.WriteLine("Ikkinching katta son:" + kichikSon);
+    }
+
+    public static void Problem3()
+    {
+        int[] array = new int[5];
+        
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = int.Parse(Console.ReadLine()!);
+        }
+
+        for (int i = 0; i < array.Length - 1; i++)
+        {
+            for (int j = i + 1; j < array.Length; j++)
+            {
+                if (array[i] > array[j])
+                {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+
+        // Massivni aylantirish
+        int[] arr = new int[array.Length];
+        arr[0] = array[array.Length - 1];
+
+        for (int i = 1; i < array.Length; i++)
+        {
+            arr[i] = array[i - 1];
+        }
+
+        // Natijani ekranga chiqarish
+        Console.WriteLine(string.Join(" ", arr));
+    }
+
+    public static void Problem5()
+    {
+        int[] array1 = [1, 2, 3];
+        int[] array2 = [4, 5, 6];
+        
+        for(int i = 0; i < 2; i++)
+        {
+            for(int a = 0; a < 3; a++)
+            {
+                if(i == 0)
+                {
+                    Console.Write(" ", array1[a]);
+                }
+                else
+                {
+                    Console.Write(" ", array2[a]);
+                }
+            }
+        }
+    }
+
+    public static void Problem2()
+    {
+        int[] array = [4, 5, 6, 4, 7, 4, 5, 6];
+
+        var son = array.GroupBy(x => x).OrderByDescending(g => g.Count()).Count();
+
+        Console.WriteLine($"Eng ko'p uchragan son: {son}");
+    }
+}
