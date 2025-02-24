@@ -149,7 +149,33 @@
 
 
         //<--10-->
+        string[] sozlar = { "apple", "banana", "cherry", "apricot", "blueberry" };
+        List<char> strings = new List<char>();
+        List<string> strings1 = new List<string>();
+        for(int i = 0; i < sozlar.Length; i++)
+        {
+            string fruits = sozlar[i];
+            strings.Add(fruits[0]);
+            strings1.Add(sozlar[i]);
+        }
 
-        // string[] arr = {"apple", "banana", "cherry", "apricot", "blueberry"};
+        strings.Sort();
+        strings1.Sort();
+
+        strings = strings.Distinct().ToList();
+
+        for(int i = 0; i < strings.Count; i++)
+        {
+            string result = $"{strings[i]}: ";
+            foreach (var fruit in sozlar)
+            {
+                if(fruit[0] == strings[i])
+                {
+                    result += $"{fruit} ";
+                }
+            }
+            Console.WriteLine(result);
+        }
+
     }
 }
