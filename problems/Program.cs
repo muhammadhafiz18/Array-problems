@@ -1,138 +1,129 @@
-﻿// 1. Ikkinchi eng katta sonni topish
+﻿using System.Globalization;
+using System.Runtime.InteropServices;
 
-// Kirish (Input):
+class Program
+{
+    public static void Main()
+    {
+        //1
+        // class Program
+    // {
+    //     public static void Main()
+    //     {
 
-// 10, 25, 30, 15, 40, 50
+    //         int[] arr = [10 , 25, 30, 15, 40, 50];
 
-// Chiqish (Output):
+    //         int temp = 0;
 
-// Eng katta son: 50  
-// Ikkinchi eng katta son: 40
+    //         int next = 0;
 
+    //         for(int i = 0; i < arr.Length; i++)
+    //         {
+    //             if(temp < arr[i])
+    //             {
+    //                 next = temp;
+
+    //                 temp = arr[i];
+    //             }
+    //         }
 
-// ---
-
-// 2. Eng ko‘p uchragan elementni topish
-
-// Kirish (Input):
-
-// 4, 5, 6, 4, 7, 4, 5, 6
-
-// Chiqish (Output):
-
-// Eng ko‘p uchragan element: 4 (3 marta)
-
-
-// ---
-
-// 3. Ro‘yxatni o‘ngga surish
-
-// Kirish (Input):
-
-// 1, 2, 3, 4, 5
-
-// Chiqish (Output):
-
-// 5, 1, 2, 3, 4
-
-
-// ---
-
-// 4. Ro‘yxatni N marta aylantirish
-
-// Kirish (Input):
-
-// Ro‘yxat: 10, 20, 30, 40, 50  
-// N: 2
-
-// Chiqish (Output):
-
-// 30, 40, 50, 10, 20
-
-
-// ---
-
-// 5. Ikkita ro‘yxatni aralashtirib qo‘shish
-
-// Kirish (Input):
-
-// Ro‘yxat 1: 1, 3, 5  
-// Ro‘yxat 2: 2, 4, 6
-
-// Chiqish (Output):
-
-// 1, 2, 3, 4, 5, 6
-
-
-// ---
-
-// 6. Ro‘yxatning bir qismini teskari qilish
-
-// Kirish (Input):
-
-// Ro‘yxat: 1, 2, 3, 4, 5, 6, 7, 8  
-// Boshlang‘ich indeks: 2  
-// Oxirgi indeks: 6
-
-// Chiqish (Output):
-
-// 1, 2, 6, 5, 4, 3, 7, 8
-
-
-// ---
-
-// 7. Raqamlarni raqamlar yig‘indisiga qarab saralash
-
-// Kirish (Input):
-
-// Ro‘yxat: 12, 25, 9, 38, 41
-
-// Chiqish (Output):
-
-// 9 (9)  
-// 12 (1+2=3)  
-// 41 (4+1=5)  
-// 25 (2+5=7)  
-// 38 (3+8=11)
-
-
-// ---
-
-// 8. Yo‘qolgan sonni topish
-
-// Kirish (Input):
-
-// 1, 2, 3, 5, 6
-
-// Chiqish (Output):
-
-// Yo‘qolgan son: 4
-
-
-// ---
-
-// 9. Ro‘yxatni toq va juft sonlarga ajratish
-
-// Kirish (Input):
-
-// 10, 15, 20, 25, 30, 35
-
-// Chiqish (Output):
-
-// Juft sonlar: 10, 20, 30  
-// Toq sonlar: 15, 25, 35
-
-
-// ---
-
-// 10. So‘zlarni bosh harfiga qarab guruhlash
-
-// Kirish (Input):
-
-// "apple", "banana", "cherry", "apricot", "blueberry"
-
-// Chiqish (Output):
-
-// A: apple, apricot  
-// B: banana, blueberry  
-// C: cherry
+    //         Console.WriteLine(next);
+    //     }
+    // }
+
+    
+
+    //2;
+
+    // int[] arr = [4, 5, 6, 4, 7, 4, 5, 6];
+    // int c = arr[0];
+    // int max = 0;
+    
+    // foreach (int num in arr)
+    // {
+    //     int temp = 0;
+
+    //     foreach(int tem in arr)
+    //     {
+    //         if(tem == num)
+    //         {
+    //             temp++;
+    //         }
+    //     }
+
+    //     if(temp > max)
+    //     {
+    //         max = temp;
+
+    //         c = num;
+
+    //     }
+    // }
+    // Console.WriteLine(c);
+
+    //3
+    // int[] arr = [1, 2, 3, 4, 5];
+
+    // int temp = 5;
+
+    // for(int i = 4; i > 0; )
+    // {
+    //     arr[i] = arr[i-1];
+
+    //     i--;
+    // }
+    
+    // arr[0] = temp;
+
+    // for(int i = 0; i < 5; i++)
+    // {
+    //     Console.WriteLine(arr[i]);
+    // }
+
+    //5
+
+    // int[] arr1 = [1, 3, 5];
+
+    // int[] arr2 = [2, 4, 6];
+
+    // for(int i = 0; i <= 3; i++)
+    // {
+    //     Console.Write(arr1[i] + ", " + arr2[i] + ", ");
+    // }
+    // Console.WriteLine();
+
+    // }
+
+    //7
+
+    // List<int> arr = [12, 25, 9, 38, 41];
+
+    // arr.Sort();
+
+    // for(int i = 0; i <= arr.Count; i++)
+    // {
+    //     if(arr[i] > 9)
+    //     {
+    //         Console.WriteLine($"{arr[i]}-({arr[i] / 10}+{arr[i] % 10}={arr[i] / 10 + arr[i] % 10})");
+    //     }
+    //     else 
+    //     {
+    //         Console.WriteLine(arr[i] + $"({arr[i]})");
+    //     }
+    // }
+
+//     //6
+
+    List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6, 7, 8};
+        int N = 2;
+        int M = 6;
+        
+        var reversedNumbers = numbers.GetRange(N, M - N);
+        numbers.RemoveRange(N, M - N);
+        reversedNumbers.Reverse();
+        numbers.InsertRange(N, reversedNumbers);
+
+        Console.WriteLine(string.Join(", ", numbers));
+
+    }
+}     
